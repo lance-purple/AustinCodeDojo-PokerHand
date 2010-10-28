@@ -41,6 +41,10 @@ public class Card implements Comparable<Card> {
     public String toString() {
 	return (Integer.toString(rank) + suit);
     }
+
+    public boolean isPairWith(Card otherCard) {
+	return getRank() == otherCard.getRank();
+    }
     
 
 }
